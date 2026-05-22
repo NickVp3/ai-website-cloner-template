@@ -1,10 +1,10 @@
 import { Headphones, RotateCcw, ShieldCheck, Truck } from "lucide-react";
 
 const FEATURES = [
-  { Icon: Truck, title: "Envio rapido", desc: "Despacho en 24h habiles. Cobertura nacional." },
+  { Icon: Truck, title: "Envío rápido", desc: "Despacho en 24 h hábiles. Cobertura nacional." },
   { Icon: ShieldCheck, title: "Pago seguro", desc: "PSE, Nequi, tarjetas y contra entrega." },
-  { Icon: RotateCcw, title: "30 dias garantia", desc: "Devoluciones sin preguntas." },
-  { Icon: Headphones, title: "Soporte 7/7", desc: "WhatsApp, chat e Instagram todos los dias." },
+  { Icon: RotateCcw, title: "30 días garantía", desc: "Devoluciones sin preguntas." },
+  { Icon: Headphones, title: "Soporte 7/7", desc: "WhatsApp, chat e Instagram todos los días." },
 ];
 
 const BRANDS = ["Apple", "Samsung", "Sony", "LG", "Xiaomi", "Logitech", "Anker", "Lenovo"];

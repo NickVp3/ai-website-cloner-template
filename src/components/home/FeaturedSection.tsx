@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { getFeaturedProducts } from "@/lib/catalog";
 import { ProductGrid } from "@/components/product/ProductGrid";
 
@@ -11,7 +11,7 @@ export async function FeaturedSection() {
         <div>
           <p className="flex items-center gap-2 text-[10px] font-bold tracking-[0.2em] uppercase text-[var(--gold)] mb-2">
             <span className="w-6 h-px bg-[var(--gold)]" />
-            SelecciÃ³n especial
+            Selección especial
           </p>
           <h2 className="font-heading text-[clamp(28px,4vw,48px)] tracking-wider text-[var(--text)] leading-none">
             Productos Destacados

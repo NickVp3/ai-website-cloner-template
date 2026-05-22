@@ -66,14 +66,14 @@ const defaultLogos: Logo[] = [
   },
   {
     id: "logo-8",
-    description: "Dispositivo portatil",
+    description: "Dispositivo portátil",
     image: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?auto=format&fit=crop&w=400&q=80",
     className: "h-16 w-28 rounded-md object-cover",
   },
 ];
 
 const Logos3 = ({
-  heading = "Categorias y tecnologia destacada",
+  heading = "Categorías y tecnología destacada",
   logos = defaultLogos,
   className,
 }: Logos3Props) => {

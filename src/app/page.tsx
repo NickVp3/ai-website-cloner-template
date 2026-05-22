@@ -22,7 +22,7 @@ export default async function Home() {
     <>
       <HeroSection />
       <CategoryStrip />
-      <Logos3 heading="Tecnologia seleccionada" />
+      <Logos3 heading="Tecnología seleccionada" />
       <FeaturedSection />
       <PromoBanners />
       {categorySections.map(({ cat, products }) => (

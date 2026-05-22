@@ -3,18 +3,18 @@ import { Camera, MessageCircle, Music, Users } from "lucide-react";
 import { CATEGORIES } from "@/data/products";
 
 const accountLinks = [
-  { label: "Iniciar sesion", href: "/cuenta" },
+  { label: "Iniciar sesión", href: "/cuenta" },
   { label: "Mis pedidos", href: "/pedidos" },
   { label: "Lista de deseos", href: "/deseos" },
-  { label: "Cotizacion", href: "/cotizacion" },
+  { label: "Cotización", href: "/cotizacion" },
 ];
 
 const helpLinks = [
   { label: "Centro de ayuda", href: "/ayuda" },
   { label: "Devoluciones", href: "/devoluciones" },
-  { label: "Garantias", href: "/garantias" },
+  { label: "Garantías", href: "/garantias" },
   { label: "Rastrear pedido", href: "/rastrear-pedido" },
-  { label: "Contactanos", href: "/contacto" },
+  { label: "Contáctanos", href: "/contacto" },
 ];
 
 const socials = [Camera, Music, MessageCircle, Users];
@@ -29,7 +29,7 @@ export function Footer() {
               IDAGIZI
             </p>
             <p className="text-sm text-[var(--text-muted)] leading-relaxed max-w-[240px]">
-              E-commerce de tecnologia premium en Colombia. Los mejores gadgets y dispositivos al mejor precio.
+              E-commerce de tecnología premium en Colombia. Los mejores gadgets y dispositivos al mejor precio.
             </p>
             <div className="flex gap-2 mt-5">
               {socials.map((Icon, index) => (
@@ -52,7 +52,7 @@ export function Footer() {
 
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-[var(--text-muted)] tracking-wide">
-            Â(c) 2025 IDAGIZI. Todos los derechos reservados. Bogota, Colombia.
+            © 2025 IDAGIZI. Todos los derechos reservados. Bogotá, Colombia.
           </p>
           <div className="flex gap-2 flex-wrap justify-center">
             {["PSE", "Nequi", "Visa", "MC", "Contra entrega"].map((method) => (

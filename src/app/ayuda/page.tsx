@@ -5,8 +5,8 @@ export default function AyudaPage() {
     <InfoPage
       eyebrow="Soporte"
       title="Centro de ayuda"
-      description="Resuelve dudas frecuentes sobre compras, pagos, envios y soporte posventa."
-      items={["Atencion por WhatsApp e Instagram todos los dias.", "Guia para elegir el equipo correcto segun tu presupuesto.", "Acompanamiento en garantias, devoluciones y rastreo de pedidos.", "Soporte para compras por cotizacion empresarial."]}
+      description="Resuelve dudas frecuentes sobre compras, pagos, envíos y soporte posventa."
+      items={["Atención por WhatsApp e Instagram todos los días.", "Guía para elegir el equipo correcto según tu presupuesto.", "Acompañamiento en garantías, devoluciones y rastreo de pedidos.", "Soporte para compras por cotización empresarial."]}
       action={{ label: "Contactar soporte", href: "/contacto" }}
     />
   );

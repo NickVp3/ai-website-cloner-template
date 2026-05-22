@@ -19,7 +19,7 @@ export function CategoryStrip() {
             href="/cotizacion"
             className="flex items-center gap-2 px-5 py-2.5 border border-[var(--gold)]/20 rounded text-[var(--text-muted)] hover:text-[var(--gold)] hover:border-[var(--gold)] hover:bg-[var(--gold)]/6 font-semibold text-sm tracking-wider uppercase whitespace-nowrap transition-all duration-200"
           >
-            Cotizacion
+            Cotización
           </Link>
         </div>
       </div>

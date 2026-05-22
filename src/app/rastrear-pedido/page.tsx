@@ -5,8 +5,8 @@ export default function RastrearPedidoPage() {
     <InfoPage
       eyebrow="Logistica"
       title="Rastrear pedido"
-      description="Sigue el envio de tus compras y confirma novedades de entrega."
-      items={["Recibe numero de guia al momento del despacho.", "Cobertura nacional con aliados logisticos.", "Validacion de direccion antes de enviar.", "Soporte si el transportador reporta novedad."]}
+      description="Sigue el envío de tus compras y confirma novedades de entrega."
+      items={["Recibe número de guía al momento del despacho.", "Cobertura nacional con aliados logísticos.", "Validación de dirección antes de enviar.", "Soporte si el transportador reporta novedad."]}
       action={{ label: "Contactar soporte", href: "/contacto" }}
     />
   );

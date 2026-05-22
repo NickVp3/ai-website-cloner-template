@@ -1,4 +1,4 @@
-﻿import { notFound } from "next/navigation";
+import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getProductsByCategory, getCategoryMeta } from "@/lib/catalog";
 import { CATEGORIES } from "@/data/products";
@@ -16,7 +16,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const meta = getCategoryMeta(slug as Category);
-  if (!meta) return { title: "CategorÃ­a | IDAGIZI" };
+  if (!meta) return { title: "Categoría | IDAGIZI" };
   return { title: `${meta.label} | IDAGIZI`, description: meta.description };
 }
 

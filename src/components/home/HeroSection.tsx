@@ -12,9 +12,7 @@ export function HeroSection() {
         <div>
           <div className="inline-flex items-center gap-2 text-[10px] font-bold tracking-[0.25em] uppercase text-[var(--gold)] border border-[var(--gold)]/30 bg-white px-4 py-2 rounded-sm mb-6">
             <span className="w-5 h-px bg-[var(--gold)]" />
-            Tecnologia de vanguardia
-          </div>
-
+            Tecnología de vanguardia
           <h1 className="font-heading text-[clamp(52px,8vw,96px)] leading-[0.92] tracking-[0.04em] text-[var(--text)] mb-6">
             EL FUTURO<br />
             EN TUS{" "}
@@ -22,7 +20,7 @@ export function HeroSection() {
           </h1>
 
           <p className="text-base text-[var(--text-muted)] leading-relaxed max-w-md mb-8">
-            Los mejores dispositivos, accesorios y gadgets de tecnologia al mejor precio. Envio a toda Colombia.
+            Los mejores dispositivos, accesorios y gadgets de tecnología al mejor precio. Envío a toda Colombia.
           </p>
 
           <div className="flex gap-4 flex-wrap">
@@ -30,7 +28,7 @@ export function HeroSection() {
               Explorar productos
             </Link>
             <Link href="/cotizacion" className="btn-outline">
-              Solicitar cotizacion
+              Solicitar cotización
             </Link>
           </div>
 

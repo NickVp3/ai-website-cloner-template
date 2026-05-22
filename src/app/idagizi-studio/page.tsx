@@ -30,7 +30,7 @@ export default async function PrivateStudioPage() {
             Publicaciones
           </h1>
           <p className="text-sm text-[var(--text-muted)] max-w-2xl mt-3">
-            Crea productos por seccion, sube una imagen desde tu escritorio, edita publicaciones existentes o retiralas del catalogo.
+            Crea productos por sección, sube una imagen desde tu escritorio, edita publicaciones existentes o retíralas del catálogo.
           </p>
         </div>
       </div>
@@ -97,7 +97,7 @@ export default async function PrivateStudioPage() {
                       className="btn-outline justify-center border-red-500/40 text-red-600 hover:border-red-500 hover:bg-red-500/10"
                     >
                       <Trash2 size={16} />
-                      Eliminar publicacion
+                      Eliminar publicación
                     </button>
                   </div>
                 </form>
@@ -118,7 +118,7 @@ function ProductFields({ product }: { product?: Awaited<ReturnType<typeof getAll
         <input name="name" defaultValue={product?.name} required placeholder="Nombre del producto" />
       </label>
       <label className="admin-field">
-        <span>Seccion</span>
+        <span>Sección</span>
         <select name="category" defaultValue={product?.category ?? "tecnologia"}>
           {CATEGORIES.map((category) => (
             <option key={category.slug} value={category.slug}>{category.label}</option>
@@ -142,12 +142,12 @@ function ProductFields({ product }: { product?: Awaited<ReturnType<typeof getAll
         <input name="image" type="file" accept="image/*" />
       </label>
       <label className="admin-field md:col-span-2">
-        <span>Descripcion corta</span>
+        <span>Descripción corta</span>
         <input name="shortDescription" defaultValue={product?.shortDescription} placeholder="Resumen para tarjetas y listados" />
       </label>
       <label className="admin-field md:col-span-2">
-        <span>Descripcion completa</span>
-        <textarea name="description" rows={4} defaultValue={product?.description} placeholder="Detalle de la publicacion" />
+        <span>Descripción completa</span>
+        <textarea name="description" rows={4} defaultValue={product?.description} placeholder="Detalle de la publicación" />
       </label>
       <label className="flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-[var(--text-muted)]">
         <input name="featured" type="checkbox" defaultChecked={product?.featured} className="h-4 w-4 accent-[var(--gold)]" />

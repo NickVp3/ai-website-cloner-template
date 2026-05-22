@@ -11,7 +11,7 @@ export function Navbar() {
   return (
     <>
       <div className="bg-[var(--gold)] text-[#111111] text-center text-xs font-semibold tracking-widest py-2 px-4">
-        Envio gratis en pedidos mayores a $150.000 COP | Pago contra entrega disponible
+        Envío gratis en pedidos mayores a $150.000 COP | Pago contra entrega disponible
       </div>
 
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-[var(--gold)]/20">
@@ -35,7 +35,7 @@ export function Navbar() {
               </li>
             ))}
             {[
-              { href: "/cotizacion", label: "Cotizacion" },
+              { href: "/cotizacion", label: "Cotización" },
             ].map((item) => (
               <li key={item.href}>
                 <Link href={item.href} className="text-[var(--text-muted)] hover:text-[var(--gold)] font-semibold text-sm tracking-widest uppercase px-4 py-2 relative group transition-colors duration-200">
@@ -82,7 +82,7 @@ export function Navbar() {
               </Link>
             ))}
             <Link href="/cotizacion" onClick={() => setMobileOpen(false)} className="text-[var(--text-muted)] hover:text-[var(--gold)] font-semibold text-sm tracking-widest uppercase py-3 flex items-center gap-3">
-              Cotizacion
+              Cotización
             </Link>
                       </div>
         )}

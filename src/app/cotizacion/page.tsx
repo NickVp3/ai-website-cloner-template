@@ -44,13 +44,13 @@ export default function CotizacionPage() {
       <nav className="flex items-center gap-2 text-xs text-[var(--text-muted)] mb-8">
         <Link href="/" className="hover:text-[var(--gold)] transition-colors">Inicio</Link>
         <span>/</span>
-        <span className="text-[var(--text)]">CotizaciÃ³n</span>
+        <span className="text-[var(--text)]">Cotización</span>
       </nav>
 
       <div className="mb-10">
-        <p className="section-tag">Cotizacion</p>
+        <p className="section-tag">Cotización</p>
         <h1 className="font-heading text-[clamp(36px,6vw,64px)] leading-none tracking-wide text-[var(--text)] mb-3">
-          Solicitar CotizaciÃ³n
+          Solicitar Cotización
         </h1>
         <p className="text-sm text-[var(--text-muted)] max-w-lg">
           Selecciona los productos que te interesan, indica las cantidades y te contactamos con el mejor precio.
@@ -59,7 +59,7 @@ export default function CotizacionPage() {
 
       {sent ? (
         <div className="bg-white border border-[var(--gold)]/20 rounded-xl p-12 text-center max-w-lg mx-auto shadow-sm">
-          <h2 className="font-heading text-3xl text-[var(--gold)] mb-3">Â¡CotizaciÃ³n enviada!</h2>
+          <h2 className="font-heading text-3xl text-[var(--gold)] mb-3">¡Cotización enviada!</h2>
           <p className="text-sm text-[var(--text-muted)] mb-6">
             Recibimos tu solicitud. Te contactaremos a <strong className="text-[var(--text)]">{email}</strong> en menos de 24 horas.
           </p>
@@ -135,7 +135,7 @@ export default function CotizacionPage() {
                   <ul className="flex flex-col gap-3 mb-4">
                     {selected.map((i) => (
                       <li key={i.product.id} className="flex justify-between items-start gap-2 text-sm">
-                        <span className="text-[var(--text)] line-clamp-1 flex-1">{i.product.name} Ã—{i.qty}</span>
+                        <span className="text-[var(--text)] line-clamp-1 flex-1">{i.product.name} ×{i.qty}</span>
                         <span className="text-[var(--gold)] font-semibold shrink-0">{formatCOP(i.product.price * i.qty)}</span>
                       </li>
                     ))}
@@ -154,8 +154,8 @@ export default function CotizacionPage() {
 
               {[
                 { label: "Nombre completo *", value: name, onChange: setName, placeholder: "Tu nombre", type: "text" },
-                { label: "Correo electrÃ³nico *", value: email, onChange: setEmail, placeholder: "tu@correo.com", type: "email" },
-                { label: "TelÃ(c)fono / WhatsApp", value: phone, onChange: setPhone, placeholder: "+57 300 000 0000", type: "tel" },
+                { label: "Correo electrónico *", value: email, onChange: setEmail, placeholder: "tu@correo.com", type: "email" },
+                { label: "Teléfono / WhatsApp", value: phone, onChange: setPhone, placeholder: "+57 300 000 0000", type: "tel" },
               ].map((field) => (
                 <div key={field.label}>
                   <label className="text-[10px] font-black tracking-[0.15em] uppercase text-[var(--text-muted)] mb-1.5 block">
@@ -185,7 +185,7 @@ export default function CotizacionPage() {
               </div>
 
               <button type="submit" className="btn-primary justify-center">
-                Enviar cotizacion
+                Enviar cotización
               </button>
             </form>
           </div>

@@ -1,4 +1,4 @@
-﻿import { notFound } from "next/navigation";
+import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { ShoppingCart, MessageSquare } from "lucide-react";
@@ -74,7 +74,7 @@ export default async function ProductPage({ params }: Props) {
           {/* Brand + category */}
           <div className="flex items-center gap-3 mb-3">
             <span className="text-xs font-black tracking-[0.2em] uppercase text-[var(--gold)]">{product.brand}</span>
-            <span className="text-[var(--text-muted)]/30">Â·</span>
+            <span className="text-[var(--text-muted)]/30">·</span>
             <Link
               href={`/categorias/${product.category}`}
               className="text-xs font-semibold tracking-widest uppercase text-[var(--text-muted)] hover:text-[var(--gold)] transition-colors capitalize"
@@ -93,7 +93,7 @@ export default async function ProductPage({ params }: Props) {
             <a href="#resenas" className="text-xs text-[var(--text-muted)] hover:text-[var(--gold)] transition-colors flex items-center gap-1">
               <MessageSquare size={12} />
               {product.ratings.length > 0
-                ? `Ver ${product.ratings.length} reseÃ±a${product.ratings.length !== 1 ? "s" : ""}`
+                ? `Ver ${product.ratings.length} reseña${product.ratings.length !== 1 ? "s" : ""}`
                 : "Se el primero en resenar"}
             </a>
           </div>
@@ -151,7 +151,7 @@ export default async function ProductPage({ params }: Props) {
       {/* Full description + all specs */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
         <div className="lg:col-span-2">
-          <h2 className="font-heading text-3xl tracking-wide text-[var(--text)] mb-4">DescripciÃ³n</h2>
+          <h2 className="font-heading text-3xl tracking-wide text-[var(--text)] mb-4">Descripción</h2>
           <p className="text-sm text-[var(--text-muted)] leading-relaxed">{product.description}</p>
         </div>
 
